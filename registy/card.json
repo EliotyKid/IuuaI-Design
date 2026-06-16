@@ -1,0 +1,10 @@
+{
+  "name": "card",
+  "dependencies": [
+    "saas"
+  ],
+  "files": [
+    "card.tsx",
+    "card.module.scss"
+  ]
+}

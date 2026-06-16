@@ -1,0 +1,10 @@
+{
+  "name": "button",
+  "dependencies": [
+    "saas"
+  ],
+  "files": [
+    "button.tsx",
+    "button.module.scss"
+  ]
+}
