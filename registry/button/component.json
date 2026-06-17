@@ -1,0 +1,11 @@
+{
+  "name": "button",
+  "files": [
+    "Button.tsx",
+    "style.module.scss"
+  ],
+  "dependencies": [
+    "clsx",
+    "sass"
+  ]
+}

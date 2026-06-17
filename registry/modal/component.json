@@ -1,0 +1,11 @@
+{
+  "name": "modal",
+  "files": [
+    "Modal.tsx",
+    "style.module.scss"
+  ],
+  "dependencies": [
+    "clsx",
+    "sass"
+  ]
+}
