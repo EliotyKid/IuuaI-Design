@@ -1,0 +1,9 @@
+{
+  "name": "magnetic",
+  "files": [
+    "index.tsx"
+  ],
+  "dependencies": [
+    "gsap"
+  ]
+}

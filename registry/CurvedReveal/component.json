@@ -1,0 +1,11 @@
+{
+  "name": "curvedReveal",
+  "files": [
+    "index.tsx",
+    "style.module.scss"
+  ],
+  "dependencies": [
+    "sass",
+    "framer-motion"
+  ]
+}
