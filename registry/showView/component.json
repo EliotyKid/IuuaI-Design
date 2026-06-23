@@ -1,0 +1,13 @@
+{
+  "name": "showView",
+  "files": [
+    "index.tsx"
+  ],
+  "registryDependencies": [
+    "showGrid",
+    "showList"
+  ],
+  "dependencies": [
+    "gsap"
+  ]
+}
