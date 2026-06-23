@@ -1,0 +1,9 @@
+{
+  "name": "showGrid",
+  "files": [
+    "index.tsx"
+  ],
+  "dependencies": [
+    "gsap"
+  ]
+}

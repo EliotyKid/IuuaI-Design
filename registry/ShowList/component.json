@@ -1,0 +1,9 @@
+{
+  "name": "showList",
+  "files": [
+    "index.tsx"
+  ],
+  "dependencies": [
+    "gsap"
+  ]
+}
