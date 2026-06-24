@@ -3,6 +3,9 @@
   "files": [
     "index.tsx"
   ],
+  "components": {
+    "Item": ["index.tsx", "style.module.scss"]
+  },
   "dependencies": [
     "gsap"
   ]
