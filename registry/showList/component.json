@@ -2,14 +2,12 @@
   "name": "showList",
   "files": [
     "index.tsx",
-    "style.module.scss",
-    "./components/Modal/anim.ts",
-    "./components/Modal/index.tsx",
-    "./components/Modal/style.module.scss",
-    "./components/Item/index.tsx",
-    "./components/Item/style.module.scss"
+    "style.module.scss"
   ],
-  "dependencies": [
-    "gsap"
-  ]
+  "components": {
+    "Modal": ["index.tsx", "anim.ts", "style.module.scss"],
+    "Item": ["index.tsx", "style.module.scss"]
+  },
+  "registryDependencies": [],
+  "dependencies": ["gsap"]
 }
