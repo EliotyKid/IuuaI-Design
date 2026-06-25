@@ -9,5 +9,5 @@
     "Item": ["index.tsx", "style.module.scss"]
   },
   "registryDependencies": [],
-  "dependencies": ["gsap"]
+  "dependencies": ["gsap", "framer-motion"]
 }

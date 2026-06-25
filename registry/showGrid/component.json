@@ -1,12 +1,15 @@
 {
   "name": "showGrid",
   "files": [
-    "index.tsx"
+    "index.tsx",
+    "style.module.scss",
+    "anim.ts"
   ],
   "components": {
-    "Item": ["index.tsx", "style.module.scss"]
+    "Item": ["index.tsx", "style.module.scss","anim.ts"]
   },
+  "registryDependencies": ["hoverMoveCursor"],
   "dependencies": [
-    "gsap"
+    "framer-motion"
   ]
 }

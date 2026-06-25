@@ -1,7 +1,8 @@
 {
   "name": "showView",
   "files": [
-    "index.tsx"
+    "index.tsx",
+    "style.module.scss"
   ],
   "registryDependencies": [
     "showGrid",

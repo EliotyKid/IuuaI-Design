@@ -1,0 +1,12 @@
+{
+  "name": "hoverMoveCursor",
+  "files": [
+    "index.tsx",
+    "style.module.scss",
+    "anim.ts"
+  ],
+  "dependencies": [
+    "framer-motion",
+    "gsap"
+  ]
+}
