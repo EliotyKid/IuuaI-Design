@@ -42,18 +42,36 @@
   }
 
   .itemInfo {
-    margin-top: 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
     h3 {
-      font-size: 24px;
-      font-weight: 400;
+      font-size: 22px;
+      font-weight: 500;
       margin: 0;
+      transition: transform 0.3s ease;
     }
 
     p {
-      font-size: 14px;
+      font-size: 13px;
       color: #666;
-      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      h3 {
+        transform: translateX(6px);
+      }
+
+      p {
+        transform: translateX(6px);
+        color: #333;
+      }
     }
   }
 }

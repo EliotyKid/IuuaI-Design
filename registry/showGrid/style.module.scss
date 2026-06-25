@@ -37,6 +37,19 @@
       background-color: transparent;
     }
 
+    .view {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #455ce9;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
   }
 
   .grid {
