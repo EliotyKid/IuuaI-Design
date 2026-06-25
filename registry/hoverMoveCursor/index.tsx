@@ -6,29 +6,29 @@ import { scaleAnimation } from "./anim"
 
 interface HoverMoveButtonProps {
   children: ReactNode,
-  active: boolean
+  active: boolean,
+  delay?: number
 }
 
-const HoverMoveCursor = ({children, active}: HoverMoveButtonProps) => {
+const HoverMoveCursor = ({children, active, delay = 0}: HoverMoveButtonProps) => {
   const modalRef = useRef<HTMLDivElement | null>(null)
   
   useEffect(() => {
     if (!modalRef.current) return
 
     const xMoveContainer = gsap.quickTo(modalRef.current, "left", {
-      duration: 0.8,
+      duration: 0.8 - delay,
       ease: "power3",
     })
     const yMoveContainer = gsap.quickTo(modalRef.current, "top", {
-      duration: 0.8,
+      duration: 0.8 - delay,
       ease: "power3",
     })
 
     const handleMouseMove = (e: MouseEvent) => {
       if (!modalRef.current) return
-      const rect = modalRef.current.getBoundingClientRect()
-      const x = e.clientX - rect.left - rect.width/2 
-      const y = e.clientY - rect.top - rect.height / 2
+      const x = e.clientX 
+      const y = e.clientY 
       xMoveContainer(x)
       yMoveContainer(y)
     }

@@ -3,6 +3,8 @@ import Item from "./components/Item";
 import styles from "./style.module.scss"
 import { motion } from "framer-motion";
 import { gridContainerVariants } from "./anim"
+import { useState } from "react";
+import HoverMoveCursor from "../hoverMoveCursor";
 
 export type DataType = {
   title: string
@@ -16,6 +18,8 @@ interface ShowGridProps {
 }
 
 const ShowGrid = ({ data }:ShowGridProps) => {
+  const [active, setActive] = useState(false)
+
   return ( 
     <div className={styles.gridSection}>
       <div className={styles.container}>
@@ -27,15 +31,26 @@ const ShowGrid = ({ data }:ShowGridProps) => {
           viewport={{ once: true, margin: "-100px"}}
         >
           {data.map((item, i) => (
-            <Item
-              category={item.category}
-              color={item.color}
-              index={i}
-              src={item.src}
-              title={item.title}
-            />
+            <div
+              onMouseEnter={()=>{setActive(true)}}
+              onMouseLeave={()=>{setActive(false)}}
+            >
+              <Item
+                category={item.category}
+                color={item.color}
+                index={i}
+                src={item.src}
+                title={item.title}
+              />
+            </div>
           ))}
         </motion.div>
+
+        <HoverMoveCursor  active={active}>
+          <div className={styles.view}>
+            view
+          </div>
+        </HoverMoveCursor>
       </div>
     </div>
    );

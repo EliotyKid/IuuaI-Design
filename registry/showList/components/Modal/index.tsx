@@ -92,7 +92,7 @@ const Modal = ({ active, index, data, modalRef }: ModalProps) => {
         </div>
       </motion.div>
 
-      {/* <motion.div
+      <motion.div
         ref={cursor}
         className={styles.cursor}
         variants={scaleAnimation}
@@ -108,7 +108,7 @@ const Modal = ({ active, index, data, modalRef }: ModalProps) => {
         animate={active ? "enter" : "closed"}
       >
         View
-      </motion.div> */}
+      </motion.div>
     </>
   )
 }
