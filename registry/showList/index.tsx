@@ -3,6 +3,8 @@ import styles from "./style.module.scss"
 import Item from "./components/Item"
 import { useRef, useState } from "react"
 import Modal from "./components/Modal"
+import { motion } from "framer-motion"
+import { showVariants } from "./anim"
 
 export type DataType = {
   title: string
@@ -32,7 +34,13 @@ const ShowList = ({ data }: ShowListProps) => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.body}>
+      <motion.div 
+        className={styles.body}
+        variants={showVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-100px"}}
+      >
         {data.map((item, i) => (
           <Item 
             key={i} 
@@ -42,7 +50,7 @@ const ShowList = ({ data }: ShowListProps) => {
             manageModal={manageModal} 
           />
         ))}
-      </div>
+      </motion.div>
 
       <Modal 
         active={active} 
