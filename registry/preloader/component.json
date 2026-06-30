@@ -1,0 +1,10 @@
+{
+  "name": "Preloader",
+  "files": [
+    "index.tsx",
+    "anim.ts",
+    "style.module.scss"
+  ],
+
+  "dependencies": ["framer-motion", "locomotive-scroll"]
+}

@@ -6,7 +6,7 @@
   ],
   "components": {
     "Modal": ["index.tsx", "anim.ts", "style.module.scss"],
-    "Item": ["index.tsx", "style.module.scss"]
+    "Item": ["index.tsx", "style.module.scss", "anim.ts"]
   },
   "registryDependencies": [],
   "dependencies": ["gsap", "framer-motion"]
