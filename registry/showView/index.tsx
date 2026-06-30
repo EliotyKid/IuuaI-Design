@@ -143,7 +143,7 @@ const ShowView = ({ data }: ShowViewProps) => {
       </div>
         <div className={styles.body}>
           <AnimatePresence mode="wait">
-            {viewMode === "list" ? (<ShowList data={filteredData}/>) : (<ShowGrid data={filteredData} />)}
+            {viewMode === "list" ? (<ShowList key={activeCategory} data={filteredData}/>) : (<ShowGrid key={activeCategory} data={filteredData} />)}
           </AnimatePresence>
         </div>
     </>

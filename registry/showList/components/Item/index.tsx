@@ -1,5 +1,7 @@
 "use client"
+import { itemVariants } from "./anim"
 import styles from "./style.module.scss"
+import { motion } from "framer-motion"
 
 type ItemProps = {
   index: number
@@ -10,8 +12,9 @@ type ItemProps = {
 
 const Item = ({ index, title, manageModal, category }: ItemProps) => {
   return (
-    <div
+    <motion.div
       className={styles.item}
+      variants={itemVariants}
       onMouseEnter={() => {
         manageModal(true, index)
       }}
@@ -21,7 +24,7 @@ const Item = ({ index, title, manageModal, category }: ItemProps) => {
     >
       <h2>{title}</h2>
       <p>{category}</p>
-    </div>
+    </motion.div>
   )
 }
 
